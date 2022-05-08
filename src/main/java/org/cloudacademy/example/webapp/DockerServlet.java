@@ -26,7 +26,7 @@ import java.util.Collections;
 
 @WebServlet(name = "DockerServlet", urlPatterns = { "/home", "/action1", "/action2", "/action3" }, loadOnStartup = 1)
 public class DockerServlet extends HttpServlet {
-    final static String CONTAINER_NETWORK_NAME = System.getenv("CONTAINER_NETWORK");
+    static String CONTAINER_NETWORK_NAME = System.getenv("CONTAINER_NETWORK");
     final static String CONTAINER_SOCAT_ENABLED = System.getenv("CONTAINER_SOCAT_ENABLED");
 
     // final static Log logger = LogFactory.getLog(DockerServlet.class);
