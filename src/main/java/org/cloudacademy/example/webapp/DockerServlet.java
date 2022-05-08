@@ -107,6 +107,8 @@ public class DockerServlet extends HttpServlet {
             response.getWriter().println(containerId);
             response.getWriter().println(containerIp);
             break;
+        case "/action4":
+            break;                
         }
     }
 }
